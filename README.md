@@ -69,36 +69,43 @@ The **LLM Consensus Engine** solves this problem by utilizing **[TarqaAI](https:
 
 ### Installation
 
-1. **Clone the repository:**
+- **Clone the repository:**
    ```bash
    git clone [https://github.com/YOUR_GITHUB_USERNAME/consensus-engine.git](https://github.com/YOUR_GITHUB_USERNAME/consensus-engine.git)
    cd consensus-engine
-Install dependencies:
+   
+1. **Install dependencies:**
+    ''bash
+    npm install
 
-Bash
-npm install
-Configure environment variables:
-Create a .env file in the project root:
+2. **Configure environment variables:**
+    **Create a .env file in the project root:**
 
-Code snippet
-PORT=3000
-TARQA_API_KEY=your_tarqa_api_key_here
-TARQA_BASE_URL=[https://api.tarqaai.com/v1](https://api.tarqaai.com/v1)
-Start the server:
+    ''bash
+    Code snippet
+    PORT=3000
+    TARQA_API_KEY=your_tarqa_api_key_here
+    TARQA_BASE_URL=[https://api.tarqaai.com/v1](https://api.tarqaai.com/v1)
 
-Bash
-npm start
-Open the application:
-Navigate to http://localhost:3000 in your browser.
+
+3. **Start the server:**
+
+    ''bash
+    npm start
+
+4. **Open the application:**
+    ''bash
+    Navigate to http://localhost:3000 in your browser.
+
 
 🛠️️ Tech Stack
-Backend: Node.js, Express.js
+- Backend: Node.js, Express.js
 
-LLM Gateway: TarqaAI (openai SDK client)
+- LLM Gateway: TarqaAI (openai SDK client)
 
-Frontend: Vanilla JavaScript, HTML5, Tailwind CSS (CDN), Marked.js
+- Frontend: Vanilla JavaScript, HTML5, Tailwind CSS (CDN), Marked.js
 
-Deployment: Render / Railway
+- Deployment: Render / Railway
 
 🔑 Bringing Your Own Keys (BYOK)
 TarqaAI provides managed access to Google Gemini models directly. To test proprietary models from OpenAI (gpt-4o, gpt-4o-mini) or Anthropic (claude-3-5-sonnet):
@@ -108,6 +115,3 @@ Head to your TarqaAI Dashboard.
 Navigate to Settings > Provider Keys (or BYOK).
 
 Add your personal provider keys. All calls routed through this app will immediately unlock those models without altering a single line of application code.
-
-📄 License
-This project is licensed under the MIT License.
