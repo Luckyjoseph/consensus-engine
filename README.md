@@ -64,54 +64,88 @@ The **LLM Consensus Engine** solves this problem by utilizing **[TarqaAI](https:
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) (v18 or newer)
-- A free [TarqaAI](https://tarqaai.com) account and API key
 
-### Installation
 
-- **Clone the repository:**
-   ```bash
-   git clone [https://github.com/YOUR_GITHUB_USERNAME/consensus-engine.git](https://github.com/YOUR_GITHUB_USERNAME/consensus-engine.git)
-   cd consensus-engine
-   
-1. **Install dependencies:**
-    ''bash
-    npm install
+[Node.js](https://nodejs.org/) (v18 or newer)
+A free [TarqaAI](https://tarqaai.com) account and API key
 
-2. **Configure environment variables:**
+
+### Installation and setup
+
+1. **Clone the repository:**
+```bash
+
+git clone [https://github.com/YOUR_GITHUB_USERNAME/consensus-engine.git](https://github.com/YOUR_GITHUB_USERNAME/consensus-engine.git)
+
+cd consensus-engine
+
+
+2. **Install dependencies:**
+'''bash
+
+npm install
+
+
+
+3. **Configure environment variables:**
+
     **Create a .env file in the project root:**
+    '''bash
 
-    ''bash
     Code snippet
+
     PORT=3000
+
     TARQA_API_KEY=your_tarqa_api_key_here
+
     TARQA_BASE_URL=[https://api.tarqaai.com/v1](https://api.tarqaai.com/v1)
 
 
-3. **Start the server:**
 
-    ''bash
+
+
+4. **Start the server:**
+    '''bash
+
     npm start
 
-4. **Open the application:**
-    ''bash
-    Navigate to http://localhost:3000 in your browser.
 
 
-🛠️️ Tech Stack
+5. **Open the application:**
+    '''bash
+
+Navigate to http://localhost:3000 in your browser.
+
+
+
+
+
+🛠️️ ###Tech Stack###
+
 - Backend: Node.js, Express.js
+
 
 - LLM Gateway: TarqaAI (openai SDK client)
 
+
 - Frontend: Vanilla JavaScript, HTML5, Tailwind CSS (CDN), Marked.js
+
 
 - Deployment: Render / Railway
 
-🔑 Bringing Your Own Keys (BYOK)
+
+🔑 ###Bringing Your Own Keys (BYOK)###
+
 TarqaAI provides managed access to Google Gemini models directly. To test proprietary models from OpenAI (gpt-4o, gpt-4o-mini) or Anthropic (claude-3-5-sonnet):
+
+
 
 Head to your TarqaAI Dashboard.
 
+
+
 Navigate to Settings > Provider Keys (or BYOK).
 
-Add your personal provider keys. All calls routed through this app will immediately unlock those models without altering a single line of application code.
+
+
+Add your personal provider keys. All calls routed through this app will immediately unlock those models without altering a single line of application code. 
